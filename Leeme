@@ -13,3 +13,48 @@ He mejorado la opción localhost para que use 0.0.0.0 y sea accesible desde la r
 
 4. Actualizar el menú de túneles
 He reorganizado el menú para priorizar las opciones más confiables.
+
+
+Cambios principales realizados:
+Agregado soporte para Ngrok:
+
+Función install_ngrok() para instalar Ngrok
+
+Función start_ngrok() para iniciar el túnel con Ngrok
+
+Opción para configurar authtoken de Ngrok
+
+Agregado soporte para localhost.run:
+
+Función start_localhostrun() para crear túneles con localhost.run
+
+Mejorada la opción de red local:
+
+Cambiado HOST de 127.0.0.1 a 0.0.0.0 para acceso en red local
+
+La función start_localhost() ahora muestra la IP local para acceso desde otros dispositivos
+
+Reorganizado el menú de túneles:
+
+Ngrok como primera opción (recomendada)
+
+localhost.run como segunda opción (alternativa)
+
+Red local como tercera opción (para cuando no hay internet)
+
+Cloudflared y LocalXpose como últimas opciones
+
+Mensajes mejorados:
+
+Indicaciones más claras sobre qué opción elegir
+
+Información sobre la IP local en modo red local
+
+Uso recomendado:
+Primera opción: Usa Ngrok (necesitarás registrarte en ngrok.com y obtener un authtoken gratuito)
+
+Segunda opción: Usa localhost.run (funciona sin configuración pero puede ser más lento)
+
+Tercera opción: Usa el modo red local si las anteriores fallan - los participantes deberán conectarse a la misma red WiFi
+
+Este script modificado debería resolver tus problemas de demostración de phishing y proporcionarte múltiples opciones confiables para tus talleres.
